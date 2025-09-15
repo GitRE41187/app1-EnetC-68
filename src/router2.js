@@ -3,7 +3,6 @@ import { BrowserRouter, NavLink } from 'react-router-dom'
 import './navlink.css'
 
 export default function Router2() {
-
     return (
         <BrowserRouter>
             <nav className="nav">

@@ -3,15 +3,16 @@ import './products.css'
 
 export default class Products extends React.Component {
     data = [
-        ['React', 500],
-        ['React Native', 650],
-        ['Node.js', 450],
-        ['MongoDB', 300],
-        ['Express.js', 650]
+        ['React', Math.floor(Math.random() * 1000) + 1],
+        ['React Native', Math.floor(Math.random() * 1000) + 1],
+        ['Node.js', Math.floor(Math.random() * 1000) + 1],
+        ['MongoDB', Math.floor(Math.random() * 1000) + 1],
+        ['Express.js', Math.floor(Math.random() * 1000) + 1],
+        ['IHaveCPU', Math.floor(Math.random() * 1000) + 1]
     ]
     render(){
         return (
-            < table border="1" >
+            <table border="1" >
                 <tr><th>ชื่อ</th><th>ราคา</th></tr>
                 {
                     this.data.map(d => {
